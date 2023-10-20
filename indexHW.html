@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="./table.js" defer></script>
+    <title>F1 HomeWork</title>
 </head>
 <body>
-    
-    Enter the number of rows: <br>
-    <input type = 'text' id = 'rows'/>
-    <br>
-    Enter the number of columns: <br>
-    <input type = 'text' id = 'cols'/>
-    <br>
-    <button id = 'make'>click</button>
-    <br>
-
-    <table border = '1.5' id = 'tab'></table>
-
-    
-    <script src="./table.js></script>
-
-
+    <Main>
+        <form action="" id="inputform">
+            <label for="race-season">Input Season:</label><br><br>
+            <input title = 'racec-season' type="text" name="race-season" id="szn-field"><br><br>
+            <label for="list-item">Input Round</label><br><br>
+            <input title = 'race-round' type="text" name="race-round" id="round-field"><br><br>
+            <input type="submit" value="Get Standing">
+        </form>
+    </Main>
+    <div>
+        <table id="driver-table">
+        <tr>
+            <th>Position</th>
+            <th>First Name </th>
+            <th>Location</th>
+            <th>Sponsor</th>
+            <th>Points</th>
+        </tr>
+        
+        </table>
+    </div>
 </body>
 </html>
